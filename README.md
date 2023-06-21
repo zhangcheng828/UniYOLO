@@ -1,4 +1,10 @@
-<div align="center">
+### 🌟 UniYOLO: The first YOLO network that unifies monocular 2D and 3D object detection.
+Monocular 3D object detection is an important capability needed in various practical applications such as driver assistance systems. In recent years, YOLO series has achieved the optimal speed and accuracy trade-off for real-time applications in 2D object detection, but their potential in 3D domain has yet not to be fully explored. In this work, we revisit the classical YOLO network through a systematic study of model design and data augmentation strategies, and offer two major contributions. First, we propose a set of data augmentation strategies that significantly improve the performance of previous monocular 3D object detectors. For example, we show that, without any change in architecture, the average precision of SMOKE on KITTI 3D object detection can be raised from  12.85% (Car, Moderate) to 20.12%. Second, we introduce UniYOLO, the first YOLO network that unifies monocular 2D and 3D object detection. UniYOLO achieved state-of-the-art performance in both 2D and 3D object detection benchmarks benefiting with **proper 3D regression targets**,  **advanced label assignment** and **strong data augmentation strategies.**
+For KITTI benchmark, the proposed UniYOLO outperformed all prior baselines on the car category in terms of 2D and 3D detection accuracy. Furthermore, for nuscenes benchmark, our solution achieved 1st place out of all monocular vision-only methods while still maintaining real-time efficiency thanks to the simple design of YOLO network.
+
+Given the input image, we utilize DLA34 or ResNet101 as the feature extraction backbone followed by Feature Pyramid Networks (FPN) for generating multi-level predictions. Detection heads are shared among multi-level feature maps and output 2D and 3D attributes including offsets, depths, and sizes, respectively. Our framework follows the simple design of YOLO network and do not need complicated prior settings and thus have better universality.
+
+div align="center">
   <img src="resources/mmdet3d-logo.png" width="600"/>
   <div>&nbsp;</div>
   <div align="center">
