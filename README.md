@@ -4,6 +4,7 @@ For KITTI benchmark, the proposed UniYOLO outperformed all prior baselines on th
 
 Given the input image, we utilize DLA34 or ResNet101 as the feature extraction backbone followed by Feature Pyramid Networks (FPN) for generating multi-level predictions. Detection heads are shared among multi-level feature maps and output 2D and 3D attributes including offsets, depths, and sizes, respectively. Our framework follows the simple design of YOLO network and do not need complicated prior settings and thus have better universality.
 
+
 div align="center">
   <img src="resources/mmdet3d-logo.png" width="600"/>
   <div>&nbsp;</div>
